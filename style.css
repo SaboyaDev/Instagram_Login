@@ -1,9 +1,17 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Global Rules */
+/* ---------------------------------------- */
 * {
   box-sizing: border-box;
 }
+html, body {
+  height: 100%;
+}
 
 html {
-  font-family: sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size: 62.5%;
 }
 
@@ -11,17 +19,229 @@ a {
   text-decoration: none;
 }
 
+p, span, a {
+  font-size: 1.4rem;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+
+/* Helpers */
+/* ---------------------------------------- */
+.txt-center {
+  text-align: center;
+}
+
+.flex-row-horz-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column-vert-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Page Wrapper */
+/* ---------------------------------------- */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+article, div, footer, header, main {
+  position: relative;
+}
+
+/* Main Section */
+/* ---------------------------------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  
+  align-items: center;
+  flex-grow: 1;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 935px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.right-ctr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  
+}
+
+.top-login-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.logo img {
+  width: 18rem;
+  margin: 25px;
+}
+
+/* Form */
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+  padding: 15px 45px;
+}
+
+.input-ctr {
+  height: 3.7rem;
+  width: 100%;
+  padding: 0 7px;
+  border: 1px solid #DBDBDB;
+  margin-bottom: 0.7rem;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+}
+
+fieldset {
+  border: medium none !important;
+  min-width: 100%;
+  padding: 0;
+}
+
+.input-ctr input {
+  border: none;
+  width: 100%;
+  color: #A1A1A1;
+  font-size: 1.3rem;
+}
+
+#submit-btn {
+  width: 100%;
+  color: white;
+  background-color: #AFDCF9;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+#login-form:valid #submit-btn {
+  background-color: #2895F6;
+}
+
+/* Alternate Login */
+
+.or-option-ctr {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #A2A2A2;
+  margin: 1rem 0;
+}
+
+.grey-border {
+  background-color: #DBDBDB;
+}
+
+.login-facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+ 
+}
+
+/* Facebook Login */
+
+.login-facebook img {
+  width: 18px;
+  margin-right: 1rem;
+}
+
+.login-facebook p {
+   color: #3B5A9A;
+  font-weight: bold;
+}
+
+#forgot-psw {
+  font-size: 1.2rem;
+  color: #3B5A9A;
+}
+
+
+/* sign Up Section */
+.signup {
+  display: flex;
+}
+
+.signup p {
+  margin: 5px;
+}
+
+#signup-link {
+  color: #2895F6;
+}
+
+/* Download Section */
+/* ---------------------------------------- */
+.download-app-section {
+}
+
+.download-btns {
+  margin: 10px 0;
+}
+
+.download-btns img {
+  width: 14rem;
+  margin: 0 5px;
+}
+
+
+
 /* Footer Section */
+/* ---------------------------------------- */
 footer {
   width: 100%;
-  padding: 15px;
+  /* max-height: 22vh; */
+  padding: 0 15px;
+}
+
+.footer-ctr {
+  margin-bottom: 50px;
 }
 
 footer a 
 , footer p{
   color: #A2A2A2;
   font-size: 1.2rem;
-  margin: 5px 9px;
+  margin: 5px 8px;
 }
 
 .first-row,
