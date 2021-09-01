@@ -33,6 +33,7 @@ button:focus {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
+  background-color: #FAFAFA;
 }
 
 article, div, footer, header, main {
@@ -63,7 +64,6 @@ article {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  
 }
 
 .top-login-section {
@@ -238,4 +238,38 @@ footer a
 
 .last-row {
   margin: 10px 0;
+}
+
+@media only screen and (min-width: 451px) {
+  article {
+    margin: 32px auto 0;
+  }
+  .right-ctr {
+    max-width: 350px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .top-login-section,
+  .signup {
+    background-color: #FFF;
+    border: 1px solid #DBDBDB;
+  }
+
+  .top-login-section,
+  .signup,
+  .download-app-section {
+    flex-grow: 1;
+  }
+
+  .top-login-section {
+    justify-content: space-around;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+
+  .signup {
+    align-items: center;
+  }
+  
 }
