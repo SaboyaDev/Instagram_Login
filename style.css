@@ -57,6 +57,11 @@ article {
   padding-bottom: 32px;
 }
 
+/* Left Side Container */
+.left-ctr {
+  display: none;
+}
+
 /* Right Side Container */
 .right-ctr {
   display: flex;
@@ -82,7 +87,7 @@ article {
 
 .logo img {
   width: 18rem;
-  margin: 25px;
+  margin: 25px auto 15px;
 }
 
 /* Form */
@@ -93,6 +98,12 @@ article {
   max-width: 350px;
   width: 100%;
   padding: 0 45px;
+  margin-top: 30px;
+}
+
+.input-ctr,
+.signup {
+  margin-bottom: 0.7rem;
 }
 
 .input-ctr {
@@ -100,7 +111,6 @@ article {
   width: 100%;
   padding: 0 7px;
   border: 1px solid #DBDBDB;
-  margin-bottom: 0.7rem;
   border-radius: 1px;
   display: flex;
   align-items: center;
@@ -180,13 +190,12 @@ fieldset {
 
 /* sign Up Section */
 .signup {
-  display: flex;
+ text-align: center;
   width: 100%;
-  justify-content: center;
 }
 
 .signup p {
-  margin: 5px;
+  margin: 20px 5px;
 }
 
 #signup-link {
@@ -240,10 +249,21 @@ footer a
   margin: 10px 0;
 }
 
+/* Language Preference */
+#language-opts {
+  border: none;
+  color: #B6B6B6;
+  font-size: 1.3rem;
+}
+
+/* MEDIA QUERIES */
+/* ---------------------------------------------------------- */
+/* Tablet View */
 @media only screen and (min-width: 451px) {
   article {
     margin: 32px auto 0;
   }
+
   .right-ctr {
     max-width: 350px;
     justify-content: center;
@@ -256,12 +276,6 @@ footer a
     border: 1px solid #DBDBDB;
   }
 
-  .top-login-section,
-  .signup,
-  .download-app-section {
-    flex-grow: 1;
-  }
-
   .top-login-section {
     justify-content: space-around;
     padding: 10px 0;
@@ -271,5 +285,21 @@ footer a
   .signup {
     align-items: center;
   }
-  
+}
+
+/* Desktop View */
+@media only screen and (min-width: 876px) {
+  .left-ctr {
+    display: block;
+    background-image: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+    margin-top: 30px;
+    height: 618px;
+    flex-basis: 454px;
+  }
+
+  #ig-app-img {
+    position: relative;
+    top: 100px;
+    left: 151px;
+  }
 }
